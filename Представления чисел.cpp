@@ -1,23 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
-
-@zimka1
-zimka1
-/
--
-1
-00
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
--/Представления чисел.cpp
-@zimka1 zimka1 Update Представления чисел.cpp
-f796c42 9 hours ago
-115 lines (105 sloc)  2.32 KB
-
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
@@ -133,4 +113,3 @@ main () {
     if (t==1&&n%2!=0)
         cout<<"+1";
 }
-
