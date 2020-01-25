@@ -39,20 +39,19 @@ main () {
     //    freopen("input.txt","r",stdin);
     //    freopen("output.txt","w",stdout);
 #endif
-ii n,m,ves;
-cin >> n >> m >> ves;
+ii n,m;
+cin >> n >> m;
 vector <ii> g[n];
 for (ii i = 0; i < m;i++)
 {
-    ii x,y,z;
-    cin >> x >> y >> z;
+    ii x,y;
+    cin >> x >> y;
     x--;
     y--;
-    if (ves<=z)
-    {
+
     g[x].pb(y);
     g[y].pb(x);
-    }
+
 }
 //for (ii i = 0; i <n ;i++)
 //{
@@ -65,7 +64,9 @@ for (ii i = 0; i < m;i++)
 //cout<<endl;
 queue <ii> q;
 vector <ii> p(n,-1);
-ii s = 0, f = n - 1;
+ii s = 0;
+ii f;
+cin >> f;
 
 q.push(s);
 p[s]=0;
@@ -84,6 +85,11 @@ while (!q.empty())
         }
     }
 }
- if (p[f] == -1) cout << "NO";
-    else cout << "YES";
+ii k=0;
+ for (ii i = 0; i < n;i++)
+ {
+
+     if (p[i]==f){k++;cout<<i+1<<endl;}
+ }
+ if (k==0)cout<<"Nyama"<<endl;
 }
