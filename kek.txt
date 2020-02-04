@@ -1,0 +1,8 @@
+:kek
+gen.exe
+1.exe
+2.exe
+fc output1.txt output2.txt
+if Errorlevel 1 goto lol
+goto kek
+:lol
